@@ -1,0 +1,365 @@
+:root{
+    --color-primary:#1d3adf;
+    --color-primary-alt:#2239bb;
+    --color-white:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #faefef;
+}
+
+.up-to-page{
+    position: fixed;
+    right: -50px;
+    bottom: 10px;
+    border: 1px solid var(--color-primary-alt);
+    padding: 5px 5px 1px 5px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 1000;
+}
+.up-to-page.show{
+    right: 10px;
+}
+.up-to-page:hover{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding: 15px 200px;
+    box-shadow: 0 4px 15px rgba(0 0 0 / 13%);
+}
+.nav,
+.nav .nav-link{
+    display: flex;
+    align-items: center;
+}
+
+.nav .CloseMenu,
+.nav .OpenMenu{
+    display: none;
+}
+
+.nav .logo{
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav .nav-link a{
+    margin-left: 20px;
+    color: var(--color-primary);
+    padding: 12px 10px;
+    border-radius: 6px;
+    transition: all 0.2s linear;
+}
+.nav .nav-link a:hover{
+    background-color: #faefef;
+    color: var(--color-primary);
+}
+
+
+.wrapper{
+    padding: 50px;
+}
+
+.wrapper .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+
+.wrapper .container .text h2{
+    font-size: 30px; 
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+.wrapper .container .text p{
+    font-size: 14px; 
+    color: #777;
+    line-height: 1.5;
+}
+
+.wrapper .container img{
+    width: 500px;
+}
+
+.about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--color-white);
+}
+
+.Heding{
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    border: 1px solid #111;
+    padding: 10px 14px;
+    width: fit-content;
+    margin: auto;
+}
+
+.about .container{
+    padding: 10px 50px;
+}
+
+.about .container .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.about .content .text{
+    width: 100%;
+    max-width: 1100px;
+}
+.about .content .text h3{
+    font-size: 30px;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.about .content .text p{
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.about .content .image img{
+    width: 100%;
+}
+
+
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 20px;
+    margin: 20px;
+    }
+
+.services .cards .card{
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: var(--color-white);
+    padding: 55px 45px;
+    margin:20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0 0 0 / 13%);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.services .cards .card:hover{
+    transform: translateY(-20px);
+}
+
+.services .cards .card h2{
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.services .cards .card .icon{
+    font-size: 30px;
+    color: var(--color-primary);
+}
+
+
+
+.contact{
+    background-color: var(--color-white);
+    padding: 0 50px;
+}
+
+.contact .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact .container .content{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact .content .social-medai h2{
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.contact .content .social-medai i{
+    font-size: 20px;
+    background-color: #faefef;
+    border-radius: 50%;
+    padding:10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+
+.contact .content .social-medai i:hover{
+    color:var(--color-white);
+    background-color: var(--color-primary-alt);
+}
+
+.contact .content .form-box label{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-right: 10px;
+}
+
+
+.contact .content .form-box input[type="email"]{
+    font-size: 15px;
+    height: 30px;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content .form-box .btn{
+    font-size: 20px;
+    padding: 12px 34px;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    transition: all 0.2s 
+}
+.content .form-box .btn:hover{
+    color: var(--color-white);
+    background-color:var(--color-primary-alt);
+}
+
+
+
+
+
+@media screen and (max-width:900px){
+    .nav{
+        padding: 15px 50px;
+    }
+    .wrapper .container .text{
+        text-align: center;
+    }
+    .wrapper .container .text h2{
+        font-size: 20px;
+    }
+    .wrapper .container .text p{
+        font-size: 12px;
+    }
+    .wrapper .container img {
+        display: none;
+    }
+
+
+
+    .about .content .text {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about .content .text h3 {
+        font-size: 25px;
+    }
+    .about .content .text p{
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .about .content .image img{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .nav{
+        padding: 15px 50px;
+    }
+    .nav .CloseMenu,
+    .nav .OpenMenu{
+        display: block; 
+        cursor: pointer;
+    
+    }
+
+
+    .nav .nav-link{
+        position: fixed;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-top: 110px;
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        top: 0;
+        right: -100%;
+        background-color: #fff;
+        transition:all 0.2s ease;
+    }
+
+    .nav.openNav .nav-link{
+        right: 0;
+    }
+    .nav .nav-link .CloseMenu{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+
+    .contact .content .social-medai{
+        width: 100%;
+        padding: 20px 30px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .content .form-box {
+        text-align: center;
+    }
+    .content .form-box .btn{
+       margin: 0 50px;
+        margin-top: 20px;
+    }
+
+}
